@@ -123,7 +123,7 @@ TGNet
 
 Training
 * cd `a_DynConv/' and run 
-
+```
 CUDA_VISIBLE_DEVICES=0,1 python -m torch.distributed.launch --nproc_per_node=2 --master_port=$RANDOM trainDynBlockFcCsAtt.py \
 --train_list='list/MOTS/MOTS_train.txt' \
 --snapshot_dir='snapshots/DynBlockFcCsAtt' \
@@ -139,6 +139,7 @@ CUDA_VISIBLE_DEVICES=0,1 python -m torch.distributed.launch --nproc_per_node=2 -
 --random_mirror=True \
 --random_scale=True \
 --FP16=False
+```
 
 
 4. Evaluation
