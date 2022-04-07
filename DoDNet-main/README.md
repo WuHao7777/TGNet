@@ -1,3 +1,7 @@
+
+The first part is the illustration of the DODNet. Because TGNet is based on DoDNet and for a fair comparison, the procedure is almost the same, you just need to change the command at Training section.
+
+=================================================
 # DoDNet
 <p align="left">
     <img src="a_DynConv/dodnet.png" width="85%" height="85%">
@@ -111,3 +115,25 @@ If this code is helpful for your study, please cite:
 
 ### Contact
 Jianpeng Zhang (james.zhang@mail.nwpu.edu.cn)
+
+======================================================
+TGNet
+
+Training
+* cd `a_DynConv/' and run 
+
+CUDA_VISIBLE_DEVICES=0,1 python -m torch.distributed.launch --nproc_per_node=2 --master_port=$RANDOM trainDynBlockFcCsAtt.py \
+--train_list='list/MOTS/MOTS_train.txt' \
+--snapshot_dir='snapshots/DynBlockFcCsAtt' \
+--input_size='64,192,192' \
+--batch_size=2 \
+--num_gpus=2 \
+--num_epochs=1000 \
+--start_epoch=0 \
+--learning_rate=1e-2 \
+--num_classes=2 \
+--num_workers=8 \
+--weight_std=True \
+--random_mirror=True \
+--random_scale=True \
+--FP16=False
