@@ -1,5 +1,5 @@
 
-The first part is the illustration of the DODNet. Because TGNet is based on DoDNet and for a fair comparison, the procedure is almost the same, you just need to change the command at Training section.
+The first part is the illustration of the DODNet. Because TGNet is based on DoDNet and for a fair comparison, the procedure is almost the same, you just need to change the command at Training, Evaluation and Post-processing section.
 
 =================================================
 # DoDNet
@@ -139,3 +139,22 @@ CUDA_VISIBLE_DEVICES=0,1 python -m torch.distributed.launch --nproc_per_node=2 -
 --random_mirror=True \
 --random_scale=True \
 --FP16=False
+
+
+4. Evaluation
+```
+CUDA_VISIBLE_DEVICES=0 python evaluateDynBlockFcCSAtt.py \
+--val_list='list/MOTS/MOTS_test.txt' \
+--reload_from_checkpoint=True \
+--reload_path='snapshots/DynBlockFcCsAtt/MOTS_DynConv_checkpoint.pth' \
+--save_path='outputs/' \
+--input_size='64,192,192' \
+--batch_size=1 \
+--num_gpus=1 \
+--num_workers=2
+```
+
+5. Post-processing
+```
+python postp.py --img_folder_path='outputs/DynBlockFcCsAtt/'
+```
