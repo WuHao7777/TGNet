@@ -1,5 +1,6 @@
 
 The first part is the illustration of the DODNet. Because TGNet is based on DoDNet and for a fair comparison, the procedure is almost the same, you just need to change the command at Training, Evaluation and Post-processing section.
+In DynConv: DynBlockFcAtt and DynBlcokFcCsAtt are two files about TGNet
 
 =================================================
 # DoDNet
@@ -127,7 +128,7 @@ This figure shows DynBlockFcAtt, which is the model presented in my paper
 This figure shows DynBlockFcCsAtt, where I add task_guided spatial attention.
 
 <p align="left">
-    <img src="a_DynConv/TGNet0.png" width="85%" height="85%">
+    <img src="a_DynConv/TGNet2.png" width="85%" height="85%">
 </p>
 
 
