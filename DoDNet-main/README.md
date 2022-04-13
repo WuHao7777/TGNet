@@ -98,21 +98,7 @@ CUDA_VISIBLE_DEVICES=0 python evaluate.py \
 python postp.py --img_folder_path='outputs/dodnet/'
 ```
 
-### 6. Citation
-If this code is helpful for your study, please cite:
-```
-@inproceedings{zhang2021dodnet,
-  title={DoDNet: Learning to segment multi-organ and tumors from multiple partially labeled datasets},
-  author={Zhang, Jianpeng and Xie, Yutong and Xia, Yong and Shen, Chunhua},
-  booktitle={Proceedings of the IEEE conference on computer vision and pattern recognition},
-  pages={},
-  year={2021}
-}
-```
 
-
-### Contact
-Jianpeng Zhang (james.zhang@mail.nwpu.edu.cn)
 
 ======================================================
 
