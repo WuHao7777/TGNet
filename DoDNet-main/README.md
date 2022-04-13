@@ -23,10 +23,7 @@ PyTorch==1.4.0<br />
 
 ### 0. Installation
 * Clone this repo
-```
-git clone https://github.com/jianpengz/DoDNet.git
-cd DoDNet
-```
+
 ### 1. MOTS Dataset Preparation
 Before starting, MOTS should be re-built from the serveral medical organ and tumor segmentation datasets
 
@@ -119,7 +116,20 @@ Jianpeng Zhang (james.zhang@mail.nwpu.edu.cn)
 ======================================================
 
 
-TGNet
+###TGNet
+
+This figure shows DynBlockFcAtt, which is the model presented in my paper 
+
+<p align="left">
+    <img src="a_DynConv/TGNet0.png" width="85%" height="85%">
+</p>
+
+This figure shows DynBlockFcCsAtt, where I add task_guided spatial attention.
+
+<p align="left">
+    <img src="a_DynConv/TGNet0.png" width="85%" height="85%">
+</p>
+
 
 Training
 * cd `a_DynConv/' and run 
