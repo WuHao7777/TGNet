@@ -3,7 +3,7 @@ The first part is the illustration of the DODNet. Because TGNet is based on DoDN
 In DynConv: DynBlockFcAtt and DynBlcokFcCsAtt are two files about TGNet
 
 You can read the TGNet paper through \TGNet ISBI paper.pdf\
-
+https://ieeexplore.ieee.org/abstract/document/9761582?casa_token=eM-O0tPuQQEAAAAA:9YGwm3Cei0c6pZ63virWkahRHygwPMMX0OrX82C2HxIm3K0kSKPqIx9DfYtoFsLmxAabx1E
 =================================================
 # DoDNet
 <p align="left">
